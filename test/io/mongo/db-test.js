@@ -19,6 +19,7 @@ describe("io/mongo/db.js", function() {
 	describe("#createBar()", function() {
 		it("Should create record without an error", function(done) {
 			var bar = {
+				exchangeId: 1,
 				symbolName: "test",
 				dateTime: new Date(1976, 6, 4),
 				open: 0,
@@ -38,7 +39,18 @@ describe("io/mongo/db.js", function() {
 			};
 			db.readBar(bar, function(err, result) {
 				if (err) return console.error(err);
-				console.log("result is", result)
+				//console.log("result is", result)
+				done();
+			});
+		});
+		it("Should not create a new record that matches exchangeId, symbolName and datetime", function(done) {
+			var bar = {
+				exchangeId: 2,
+				symbolName: "test",
+				dateTime: new Date(1976, 6, 4)
+			};
+			db.createBar(bar, function(err, result) {
+				expect(err).notOk;
 				done();
 			});
 		});
