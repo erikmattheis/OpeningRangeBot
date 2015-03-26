@@ -3,6 +3,9 @@
 
 node_modules/
 
+# Stuff with private data #
+config.json
+
 # Compiled source #
 ###################
 *.com
