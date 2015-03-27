@@ -19,13 +19,14 @@ describe("io/mongo/db.js", function() {
 	describe("#createBar()", function() {
 		it("Should create record without an error", function(done) {
 			var bar = {
-				exchangeId: 1,
+				exchange: 1,
 				symbolName: "test",
 				dateTime: new Date(1976, 6, 4),
 				open: 0,
 				high: 0,
 				low: 0,
 				close: 0,
+				last: 0,
 				volume: 0
 			};
 			db.createBar(bar, function(result) {
