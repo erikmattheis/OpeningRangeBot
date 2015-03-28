@@ -11,7 +11,7 @@ describe("lib/io/exchange/TradeKing/stream.js", function() {
 					console.log(err);
 				}
 				stream.getEmitter().on("data", function(data) {
-					console.log("event", data);
+					//console.log("event", data);
 					
 					expect(data).to.have.property("status", "connected");
 				});

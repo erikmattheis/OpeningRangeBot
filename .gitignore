@@ -4,7 +4,7 @@
 node_modules/
 
 # Stuff with private data #
-config.json
+config-private.json
 
 # Compiled source #
 ###################
