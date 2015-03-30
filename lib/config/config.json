@@ -1,3 +1,4 @@
 {
-	"streamSource": "TradeKing"
+	"streamSource": "FILE",
+	"checkForNewData": false
 }

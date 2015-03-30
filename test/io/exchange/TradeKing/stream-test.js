@@ -12,7 +12,7 @@ describe("lib/io/exchange/TradeKing/stream.js", function() {
 				if (err) {
 					console.log(err);
 				}
-				stream.getEmitter().on("data", function(data) {					
+				emitter.on("data", function(data) {					
 					expect(data).to.have.property("status", "connected");
 				});
 				

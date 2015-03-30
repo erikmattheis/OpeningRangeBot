@@ -2,7 +2,7 @@ var expect = require("chai").expect,
 	csvData = require("../../../lib/io/csv/csv-data.js");
 
 describe("io/csv/csv-data.js", function() {
-	describe("#read()", function() {
+	describe("#init()", function() {
 		it("Should return object with expected properties", function(done) {
 			
 			csvData.read(function(err, bars) {
