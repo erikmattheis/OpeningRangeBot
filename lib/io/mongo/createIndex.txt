@@ -1,0 +1,1 @@
+db.products.createIndex( { "exchangeId: ": 1, "symbolName": 1, "dateTime": 1} )
