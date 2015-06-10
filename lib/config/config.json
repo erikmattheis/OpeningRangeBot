@@ -1,6 +1,4 @@
 {
 	"streamSource": "TradeKingSavedData",
-	"checkForNewData": false,
-	"config.openingRangeStopLossFactor": 0.5,
-	"config.openingRangeTakeProfitFactor": 1.5
+	"checkForNewData": false
 }
