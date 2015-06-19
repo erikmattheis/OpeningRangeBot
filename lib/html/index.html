@@ -1,0 +1,25 @@
+<html>
+<head>
+<title>View It</title>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.1/angular.min.js"></script>
+
+<script>
+angular.module('docsBindExample', [])
+.controller('Controller', ['$scope', function($scope) {
+  $scope.name = 'Max Karl Ernst Ludwig Planck (April 23, 1858 – October 4, 1947)';
+}]);
+</script>
+</head>
+<body ng-app="docsBindExample">
+
+<div ng-controller="Controller">
+  Hello <input ng-model='name'> <hr/>
+  <h1 ng-bind="name"></h1> <br/>
+  <span ng:bind="name"></span> <br/>
+  <span ng_bind="name"></span> <br/>
+  <span data-ng-bind="name"></span> <br/>
+  <span x-ng-bind="name"></span> <br/>
+</div>
+
+</body>
+</html>
