@@ -42,5 +42,6 @@ config-private.json
 .Spotlight-V100
 .Trashes
 .idea
+csv/*
 ehthumbs.db
 Thumbs.db
