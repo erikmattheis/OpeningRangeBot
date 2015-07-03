@@ -1,5 +1,5 @@
 {
-	"streamSource": "FILE",
+	"streamSource": "TradeKing",
 	"checkForNewData": false,
-	"runSimulation": true
+	"runSimulation": false
 }
