@@ -1,6 +1,6 @@
 {
 	"streamSource": "FILE",
 	"checkForNewData": false,
-	"runSimulation": true
+	"runSimulation": false
 }
 
