@@ -5,7 +5,7 @@
 <script src="/static/jquery.min.js"></script>
 <script src="/static/angular.min.js"></script>
 <script src="/static/highstock.src.js"></script>
-<script src="/static/highstocks-app.js"></script>
+<script src="/static/app.js"></script>
 </head>
 <body ng-app="myapp">
 
@@ -13,22 +13,15 @@
 
     <form name="myForm" ng-submit="getDataForSymbolAndDay()">
        <select ng-model="selectedSymbol" 
-                ng-options="symbol for symbol in symbols" required></select>
+          ng-options="symbol for symbol in symbols" required></select>
        <label for="day">Date:</label>
        <input type="date" id="day" name="day" ng-model="selectedDay"
            placeholder="yyyy-MM-dd" min="2013-01-01" max="2016-01-01" required>
         <input type="submit" id="submit" value="Submit">
     </form>
 
-<div id="container" style="height: 400px"></div>
+    <div id="container" style="height: 400px"></div>
 
-    <div class="row">
-        <div class="span9">
-            <div class="row">
-                <highchart class="chart" config="chartConfig" class="span9" ></highchart>
-            </div>
-        </div>
-    </div>
 </div>
 
 
