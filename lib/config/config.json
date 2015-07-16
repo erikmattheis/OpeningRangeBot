@@ -2,6 +2,8 @@
 	"streamSource": "FILE",
 	"checkForNewData": false,
 	"runSimulation": true,
+	"simulateTicks": false,
+	"simulateOptionsStrategy": true,
 	"thinkOutLoud": true
 }
 
