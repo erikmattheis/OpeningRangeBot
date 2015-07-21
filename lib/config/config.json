@@ -1,10 +1,10 @@
 {
-	"streamSource": "TradeKing",
+	"streamSource": "FILE",
 	"recordOptions": true,
 	"checkForNewData": false,
 	"runSimulation": false,
 	"simulateTicks": false,
-	"simulateOptionsStrategy": false,
+	"simulateOptionsStrategy": true,
 	"thinkOutLoud": true
 }
 
