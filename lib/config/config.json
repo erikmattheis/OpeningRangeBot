@@ -1,10 +1,13 @@
 {
-	"streamSource": "FILE",
-	"recordOptions": true,
+	"unusedDatabase": "OptionsStrategyBot",
+	"databaseName": "OpeningRangeBot",
+	"streamSource": "TradeKingSavedData",
+	"recordOptions": false,
 	"checkForNewData": false,
 	"runSimulation": false,
 	"simulateTicks": false,
-	"simulateOptionsStrategy": true,
-	"thinkOutLoud": true
+	"simulateOptionsStrategy": false,
+	"thinkOutLoud": true,
+	"serverPort": 3002
 }
 

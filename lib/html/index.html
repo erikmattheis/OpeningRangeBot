@@ -1,30 +1,39 @@
 <html>
 <head>
 <title>View It</title>
-<!--<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.1/angular.min.js"></script>-->
-<script src="/static/jquery.min.js"></script>
-<script src="/static/angular.min.js"></script>
-<script src="/static/highstock.src.js"></script>
-<script src="/static/app.js"></script>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+<link href="/static/loading-bar.css" rel="stylesheet">
 </head>
 <body ng-app="myapp">
 
 <div ng-controller="myctrl">
 
-    <form name="myForm" ng-submit="getDataForSymbolAndDay()">
+    <form name="myForm">
        <select ng-model="selectedSymbol" 
           ng-options="symbol for symbol in symbols" required></select>
        <label for="day">Date:</label>
        <input type="date" id="day" name="day" ng-model="selectedDay"
            placeholder="yyyy-MM-dd" min="2013-01-01" max="2016-01-01" required>
-        <input type="submit" id="submit" value="Submit">
+        <button data-ng-click="getDataForSymbolAndDay()">Symbol</button>
+        <button data-ng-click="getStraddlePrices()">Straddle</button>
+
+        <button data-ng-click="getAvailableOptionNames()">Option Names</button>
+        <select ng-model="selectedOption" ng-options="item as item for item in optionNames">
+		    <option value="">Select Option</option>
+		</select>
+		<button data-ng-click="getOptionPrices()">Get Prices</button>
     </form>
-<button data-ng-click="getStraddlePrices()">Get Straddle Prices</button>
+	
     <div id="container" style="height: 400px"></div>
 
 </div>
 
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.3/angular.min.js"></script>
+<script src="/static/loading-bar.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.13.0/ui-bootstrap-tpls.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highstock/2.1.7/highstock.js"></script>
+<script src="/static/main.js"></script>
 
 </body>
 </html>
