@@ -1,8 +1,8 @@
 {
 	"unusedDatabase": "OptionsStrategyBot",
 	"databaseName": "OpeningRangeBot",
-	"streamSource": "TradeKingSavedData",
-	"recordOptions": false,
+	"streamSource": "TradeKing",
+	"recordOptions": true,
 	"checkForNewData": false,
 	"runSimulation": false,
 	"simulateTicks": false,
