@@ -16,6 +16,8 @@
            placeholder="yyyy-MM-dd" min="2013-01-01" max="2016-01-01" required>
         <button data-ng-click="getDataForSymbolAndDay()">Symbol</button>
         <button data-ng-click="getStraddlePrices()">Straddle</button>
+        <button data-ng-click="getTrades()">Trades</button>
+        
 
         <button data-ng-click="getAvailableOptionNames()">Option Names</button>
         <select ng-model="selectedOption" ng-options="item as item for item in optionNames">
