@@ -3,7 +3,7 @@
 	"databaseName": "OpeningRangeBot",
 	"streamSource": "FILE",
 	"recordOptions": true,
-	"checkForNewData": false,
+	"checkForNewData": true,
 	"runSimulation": false,
 	"simulateTicks": false,
 	"simulateOptionsStrategy": false,
